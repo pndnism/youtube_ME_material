@@ -44,3 +44,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class VideoInfo(models.Model):
+    title =  models.CharField(max_length=255)
+    description = models.TextField()
+    channel_id = models.CharField(max_length=255)
+    channel_name = models.CharField(max_length=255)
+    thumbnail = models.CharField(max_length=255)
+    video_published_date = models.DateTimeField
